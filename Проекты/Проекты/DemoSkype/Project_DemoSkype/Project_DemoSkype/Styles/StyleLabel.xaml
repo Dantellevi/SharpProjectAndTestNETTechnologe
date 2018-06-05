@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Project_DemoSkype">
+
+
+    <Style x:Key="LabelTitle" TargetType="Label">
+        <Style.Setters>
+
+            <Setter Property="Control.Foreground" Value="#f4f5f7" />
+            <Setter Property="Control.FontFamily" Value="Verdana" />
+        </Style.Setters>
+    </Style>
+    
+</ResourceDictionary>

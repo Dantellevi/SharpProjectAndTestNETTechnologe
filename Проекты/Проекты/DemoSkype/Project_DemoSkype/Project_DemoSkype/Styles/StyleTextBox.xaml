@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Project_DemoSkype">
+
+    <Style x:Key="SerachFilld" TargetType="TextBox">
+        <Style.Setters>
+            <Setter Property="Control.Background" Value="#303959" />
+            <Setter Property="Control.FontFamily" Value="Verdana" />
+            <Setter Property="Control.FontSize"     Value="18" />
+            <Setter Property="Control.Foreground" Value="White" />
+            <Setter Property="Control.Margin" Value="5,10,5,1" />
+        </Style.Setters>
+    </Style>
+    
+</ResourceDictionary>

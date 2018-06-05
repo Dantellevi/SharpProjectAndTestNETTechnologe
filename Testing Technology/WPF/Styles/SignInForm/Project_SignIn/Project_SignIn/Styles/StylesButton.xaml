@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Project_SignIn">
+
+    
+    <Style x:Key="ButtonClose" TargetType="Button">
+        
+        <Setter Property="Control.FontFamily" Value="Verdana"/>
+        <Setter Property="Control.Background" Value="#040f3d" />
+        <Setter Property="Control.Foreground" Value="#2b51ef" />
+        <Setter Property="Control.HorizontalAlignment" Value="Center" />
+        <!--<Setter Property="Control.BorderThickness" Value="1" />
+        <Setter Property="Control.BorderBrush" Value="#2b51ef" />-->
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Control.Background" Value="Black" />
+                <Setter Property="Control.Foreground" Value="Green" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="BuuttonSignIn" TargetType="Button">
+        <Setter Property="Control.FontFamily" Value="Verdana"/>
+        <Setter Property="Control.Background" Value="#2b51ef" />
+        <Setter Property="Control.Foreground" Value="#040f3d" />
+        
+        <Setter Property="Control.Margin" Value="1,8,1,8" />
+        <Setter Property="Control.Height" Value="46" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Control.Background" Value="Orange" />
+                <Setter Property="Control.Foreground" Value="Red" />
+                <Setter Property="Control.FontSize" Value="22" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    
+    
+    
+</ResourceDictionary>

@@ -1,0 +1,71 @@
+﻿<Window x:Class="Project_DemoSkype.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_DemoSkype"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="660" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="#1d1328" Offset="0.5" />
+            <GradientStop Color="#706a57" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    <Grid x:Name="MainGrid">
+        <DockPanel>
+            <Grid x:Name="Top_Pannel" DockPanel.Dock="Top" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25" />
+                </Grid.RowDefinitions>
+                <Label x:Name="TitleWinMain" Content="Window Skype API" Grid.Row="0" Style="{StaticResource LabelTitle}" />
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="700,0,2,0">
+                    <Button  x:Name="ButCloseWindow" Content="__" Margin="0,0,6,0" BorderThickness="0"  Width="19" Style="{StaticResource ButtonCloseAndCallDown}"  >
+                        
+                    </Button>
+                    <Button  x:Name="ButCutDownWindow" Click="ButCutDownWindow_Click" Content="X" Width="19" Style="{StaticResource ButtonCloseAndCallDown}" BorderThickness="0" BorderBrush="Transparent" >
+                        
+                    </Button>
+                    
+                </StackPanel>
+                
+            </Grid>
+            <Grid x:Name="Left_PannelTools" DockPanel.Dock="Left"   >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="0.5*"  />
+                    <ColumnDefinition x:Name="ListPannel" Width="0*"  />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="3*" />
+                </Grid.ColumnDefinitions>
+
+                <GridSplitter Grid.Column="2" Width="1" HorizontalAlignment="Center" VerticalAlignment="Stretch" Background="#1d1328"/>
+                <!--Панель с кнопками-->
+                <StackPanel Orientation="Vertical" Grid.Column="0">
+                    <Button x:Name="ButtONOFFSplitter" MouseEnter="ButtONOFFSplitter_MouseEnter" Click="ButtONOFFSplitter_Click" Grid.Column="0" Height="40" Style="{StaticResource ButtonMenu}">
+                        <Image x:Name="ButtonSPL" Source="Images/icons8_Menu_50px_1.png"></Image>
+                    </Button>
+                    <Button x:Name="ButtMesseger" Grid.Column="0" Height="40" Style="{StaticResource ButtonMenu}">
+                        <Image x:Name="MesagerImage" Source="Images/icons8_Speech_Bubble_50px_1.png" />
+                    </Button>
+                    <Button x:Name="ButtPhoneDialog" Grid.Column="0" Height="40" Style="{StaticResource ButtonMenu}">
+                        <Image Source="Images/icons8_Phone_50px.png" />
+                    </Button>
+                    <Button x:Name="ButtContacts" Grid.Column="0" Height="40" Style="{StaticResource ButtonMenu}" >
+                        <Image Source="Images/icons8_Contacts_50px_1.png" />
+                    </Button>
+                    <Button x:Name="ButtPhoneQuetions" Grid.Column="0" Height="40" Margin="0,380,0,0" Style="{StaticResource ButtonMenu}">
+                        <Image Source="Images/icons8_Ask_Question_50px.png" />
+                    </Button>
+                    <Button x:Name="ButtGlobalSettings" Grid.Column="0" Height="40" Style="{StaticResource ButtonMenu}">
+                        <Image Source="Images/icons8_Settings_50px.png" />
+                    </Button>
+                </StackPanel>
+                <!--Список друзей -->
+                <StackPanel Orientation="Vertical" Grid.Column="1" Background="#36155b">
+                    <TextBox x:Name="SearchFilld" Style="{StaticResource SerachFilld}"/>
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

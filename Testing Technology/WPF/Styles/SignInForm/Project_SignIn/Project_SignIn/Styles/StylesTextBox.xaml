@@ -1,0 +1,20 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Project_SignIn">
+
+
+
+    <Style x:Key="TextInputStyle">
+        <Setter Property="Control.Background" Value="#040f3d" />
+        <Setter Property="Control.Foreground" Value="#2b51ef" />
+        <Setter Property="Control.BorderThickness" Value="1" />
+        <Setter Property="Control.BorderBrush" Value="White" />
+        <Setter Property="Control.FontFamily" Value="GOST Type A" />
+        <Setter Property="Control.FontWeight" Value="Regular" />
+        <Setter Property="Control.FontStyle" Value="Italic" />
+        <Setter Property="Control.FontSize" Value="18" />
+        <Setter Property="Control.Margin" Value="5,1,5,1" />
+    </Style>
+    
+    
+</ResourceDictionary>
