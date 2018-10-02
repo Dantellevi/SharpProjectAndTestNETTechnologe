@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Terminal_withGraphicsPlot">
+
+
+    <Style x:Key="TitleSettingWin" TargetType="Label">
+        <Style.Setters>
+            <Setter Property="Margin" Value="75,0,0,1" />
+            <Setter Property="Foreground" Value="#371538" />
+            <Setter Property="FontSize" Value="18" />
+        </Style.Setters>
+    </Style>
+
+    <Style x:Key="LabelforCombo" TargetType="Label">
+        <Style.Setters>
+            <Setter Property="Foreground" Value="#db0a18" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="Margin" Value="10,0,0,0" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style.Setters>
+    </Style>
+
+</ResourceDictionary>

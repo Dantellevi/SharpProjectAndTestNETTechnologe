@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cars>
+  <Car Id="1" Type="Passeger">
+    <Vendor>Toyota</Vendor>
+    <Model>Versa</Model>
+    <Year>2014</Year>
+    <Passegers>123</Passegers>
+  </Car>
+  <Car Id="2" Type="Truck">
+    <Vendor>Mercedes</Vendor>
+    <Model>S500</Model>
+    <Year>2013</Year>
+    <Capasity>100</Capasity>
+  </Car>
+  <Car Id="3" Type="Passeger">
+    <Vendor>BMW</Vendor>
+    <Model>760Li</Model>
+    <Year>2014</Year>
+    <Passegers>200</Passegers>
+  </Car>
+  <Car Id="4" Type="Passeger">
+    <Vendor>BMW</Vendor>
+    <Model>650Li</Model>
+    <Year>2014</Year>
+    <Passegers>85</Passegers>
+  </Car>
+  <Car Id="12" Type="Truck">
+    <Vendor>asd</Vendor>
+    <Model>www</Model>
+    <Year>1998</Year>
+    <Capasity>2000</Capasity>
+  </Car>
+</Cars>

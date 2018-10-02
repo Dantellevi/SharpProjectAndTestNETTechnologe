@@ -1,0 +1,176 @@
+﻿<Window x:Class="Lesson1_Companovka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lesson1_Companovka"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="760" Width="425">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.4*" />
+            <RowDefinition Height="4.2*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+
+<!--Button TOP-->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Content="Apply" Grid.Column="0" Margin="2,0,2,0" />
+            <Button Content="Reset" Grid.Column="1" Margin="2,0,2,0" />
+            <Button Content="Refresh" Grid.Column="2" Margin="2,0,2,0" />
+        </Grid>
+
+<!--Texbox Top-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Pulse Properties" FontStyle="Oblique" FontWeight="Bold"  Grid.Row="0" />
+            <TextBlock Text="Description"   Grid.Row="1" />
+            <TextBox   Grid.Row="2" />
+        </Grid>
+
+<!--Texboxes midle-->
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.7*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Content="Status" Grid.Row="0" Grid.Column="0" Margin="1,0,0,0"  />
+            <TextBox   Grid.Row="0" Grid.Column="0" Background="Gray" Margin="5,22,5,1" />
+            
+            <Label Content="Revision" Grid.Row="0" Grid.Column="1" Margin="1,0,0,0"  />
+            <TextBox   Grid.Row="0" Grid.Column="1" Background="Gray" Margin="5,22,5,1" />
+           
+            <Label Content="Part Number" Grid.Row="1" Grid.Column="0" Margin="1,0,0,0"  />
+            <TextBox   Grid.Row="1" Grid.ColumnSpan="2" Background="Gray" Margin="5,22,5,1" />
+            
+            
+        </Grid>
+        <!--Texboxes midle-->
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.1*" />
+                
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Text="Raw Matirial" FontWeight="Bold" Grid.Row="0" />
+            <TextBlock Text="Material"  Grid.Row="1" />
+            <ComboBox Grid.Row="1" Margin="1,17,1,1" />
+        </Grid>
+
+        <!--checkboxes midle-->
+        <Grid Grid.Row="4" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Manufacturer Info" FontWeight="Bold" Grid.Column="0" Margin="1,6,1,1"/>
+            <TextBlock Text="Work centres"  Grid.Column="0" Margin="11,26,1,1"/>
+            <CheckBox Grid.Column="0" Content="Weld" Margin="11,50,1,1" />
+            <CheckBox Grid.Column="0" Content="Assambly" Margin="11,70,1,1" />
+            <CheckBox Grid.Column="0" Content="Plasma" Margin="11,90,1,1" />
+            <CheckBox Grid.Column="0" Content="Laser" Margin="11,110,1,1" />
+            <CheckBox Grid.Column="0" Content="Purchase" Margin="11,130,1,1" />
+
+            <CheckBox Grid.Column="1" Content="Lathe" Margin="11,50,1,1" />
+            <CheckBox Grid.Column="1" Content="Drill" Margin="11,70,1,1" />
+            <CheckBox Grid.Column="1" Content="Fold" Margin="11,90,1,1" />
+            <CheckBox Grid.Column="1" Content="Roll" Margin="11,110,1,1" />
+            <CheckBox Grid.Column="1" Content="Saw" Margin="11,130,1,1" />
+        </Grid>
+
+        <Grid Grid.Row="5">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Length" />
+            <TextBox Grid.Row="1" Background="Gray" Margin="1,1,1,1" />
+            
+        </Grid>
+
+        <Grid Grid.Row="6">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Mass" />
+            <ComboBox Grid.Row="1" Background="Gray" Margin="1,1,1,1" />
+
+        </Grid>
+
+        <Grid Grid.Row="7">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Finish" />
+            <ComboBox Grid.Row="1" Background="Gray" Margin="1,1,1,1" />
+
+        </Grid>
+
+        <Grid Grid.Row="8">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Purchase Information" />
+            <ComboBox Grid.Row="1" Background="Gray" Margin="1,1,1,1" />
+
+        </Grid>
+
+        <Grid Grid.Row="9">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Supllier Name" />
+            <TextBox Grid.Row="1" Background="Gray" Margin="1,1,1,1" />
+        </Grid>
+
+        <Grid Grid.Row="10">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Supllier Code" />
+            <TextBox Grid.Row="1" Background="Gray" Margin="1,1,1,1" />
+        </Grid>
+
+
+        <Grid Grid.Row="11">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Additional Info" Margin="1,5,1,1" FontWeight="Bold" />
+            <TextBlock Grid.Row="1" Text="Note" Margin="1,5,1,1"  />
+            <TextBox Grid.Row="2" Background="Gray" Margin="5,5,5,5" />
+        </Grid>
+
+    </Grid>
+</Window>

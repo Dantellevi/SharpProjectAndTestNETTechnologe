@@ -1,0 +1,14 @@
+ для отслеживания исключений в App.config  хоста в поле behavior  добавить :
+ 
+ <behaviors>
+      <serviceBehaviors>
+        <behavior name="mexBehavior">
+          <serviceMetadata httpGetEnabled="true"/>
+         добавить-> <serviceDebug includeExceptionDetailInFaults="true"/>
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+	
+	
+	или добавить атрибут
+	[ServiceBehavior(InstanceContextMode =InstanceContextMode.Single,includeExceptionDetailInFaults="true")]  в класс сервиса (carService)

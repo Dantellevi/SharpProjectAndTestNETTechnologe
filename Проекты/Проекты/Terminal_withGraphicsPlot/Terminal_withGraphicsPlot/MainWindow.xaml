@@ -1,0 +1,45 @@
+﻿<Window x:Class="Terminal_withGraphicsPlot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Terminal_withGraphicsPlot"
+        WindowStyle="None"
+        mc:Ignorable="d" Height="400" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="#4086f7" Offset="0.8" />
+            <GradientStop Color="#143f2f" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.2*" />   <!--строка для статусной стр. и кнопки закрытия-->
+            <RowDefinition Height="11*" />  <!--строка для формы ввода-->
+            
+        </Grid.RowDefinitions>
+        
+        <!--Статусная панель-->
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button x:Name="IconWinLoadBut" Style="{StaticResource IconButtonLoadWin}" Height="26" Width="26" >
+                <!--вст. изображения-->
+            </Button>
+            <Label x:Name="WinSetting" Content="Настройки" Style="{StaticResource TitleSettingWin}" />
+            <Button x:Name="CloseWin" Click="CloseWin_Click" Content="X" Style="{StaticResource ButtonClose}" Width="26" />
+        </StackPanel>
+        <!--|||||||||||||||||-->
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <Label Content="Скорость в бодах" Style="{StaticResource LabelforCombo}" />
+            <ComboBox x:Name="SpeedBaud" Margin="10,1,10,1" ></ComboBox>
+            <Label Content="Бит четности" Style="{StaticResource LabelforCombo}" />
+            <ComboBox x:Name="ParityBit" Margin="10,1,10,1" />
+            <Label Content="Стоп бит" Style="{StaticResource LabelforCombo}" />
+            <ComboBox x:Name="CoutStopBit" Margin="10,1,10,1" />
+            <Label Content="Формат посылки" Style="{StaticResource LabelforCombo}" />
+            <ComboBox x:Name="FormatBit" Margin="10,1,10,1" />
+            <Label Content="Номер порта" Style="{StaticResource LabelforCombo}" />
+            <ComboBox x:Name="PORT" Margin="10,1,10,1" />
+            <Button x:Name="ValidButton" Click="ValidButton_Click" Margin="10,20,10,1" Style="{StaticResource ButtonValid}" Height="60" Content="Установить" />
+        </StackPanel>
+    </Grid>
+</Window>
